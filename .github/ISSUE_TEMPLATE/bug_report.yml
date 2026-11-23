@@ -1,0 +1,25 @@
+name: Bug report
+description: Báo lỗi cho dự án
+labels: ["type: bug", "status: needs-triage"]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Phiên bản
+      placeholder: ví dụ 1.4.0
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Hệ điều hành
+      placeholder: ví dụ Windows 11, Ubuntu 24.04
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Log lỗi và các bước tái hiện
+      description: Dán log đầy đủ và mô tả từng bước để tái hiện lỗi
+    validations:
+      required: true
